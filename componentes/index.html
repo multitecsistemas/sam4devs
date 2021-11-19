@@ -531,6 +531,7 @@
 <p>Componentes de Software é o termo utilizado para descrever o elemento de software que encapsula uma série de funcionalidades. Os componentes abaixo listados foram desenvolvidos pela Multitec para uso exclusivo no SAM.</p>
 <p>Estes componentes são baseados na sintaxe das tags HTML, são construidos a partir do framework <a href="https://br.vuejs.org/v2/guide/index.html">VUE.js</a> e podem ser utilizados para a criação de filtros que são utilizados nos processos de <a href="/processos/#extracao-de-dados">Extração de Dados</a>.</p>
 <h2 id="atributos-default">Atributos Default<a class="headerlink" href="#atributos-default" title="Permanent link">&para;</a></h2>
+<hr />
 <p>Assim como nas tags do HTML os componentes Multitec também possuem seus atributos. Todos os componentes por default possuem os seguintes atributos para a sua configuração.</p>
 <table>
 <thead>
@@ -586,8 +587,8 @@
 </tr>
 </tbody>
 </table>
-<hr />
 <h2 id="m-input"><code>m-input</code><a class="headerlink" href="#m-input" title="Permanent link">&para;</a></h2>
+<hr />
 <p>Este componente renderiza um campo <code>input</code> para textos, com os seguintes atributos:</p>
 <table>
 <thead>
@@ -611,8 +612,8 @@
 <p><img alt="Campo m-input!" src="../img/m-input.png" title="m-input" /></p>
 <div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">m-input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">label</span><span class="o">=</span><span class="s">&quot;Campo de texto&quot;</span> <span class="na">help</span><span class="o">=</span><span class="s">&quot;Campo obrigatório&quot;</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&quot;filtros.texto&quot;</span> <span class="na">:required</span><span class="o">=</span><span class="s">&quot;true&quot;</span> <span class="p">/&gt;</span>
 </code></pre></div>
-<hr />
 <h2 id="m-check"><code>m-check</code><a class="headerlink" href="#m-check" title="Permanent link">&para;</a></h2>
+<hr />
 <p>Este componente renderiza um campo <code>checkbox</code>, com os seguintes atributos:</p>
 <table>
 <thead>
@@ -648,8 +649,8 @@
 <p><img alt="Campo m-check!" src="../img/m-check.png" title="m-check" /></p>
 <div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">m-check</span> <span class="na">label</span><span class="o">=</span><span class="s">&quot;Marque este campo&quot;</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&quot;filtros.texto&quot;</span> <span class="na">:required</span><span class="o">=</span><span class="s">&quot;true&quot;</span> <span class="p">/&gt;</span>
 </code></pre></div>
-<hr />
 <h2 id="m-radio"><code>m-radio</code><a class="headerlink" href="#m-radio" title="Permanent link">&para;</a></h2>
+<hr />
 <p>Este componente renderiza um campo <code>radio</code>, com os seguintes atributos:</p>
 <table>
 <thead>
@@ -679,8 +680,8 @@
 <p><img alt="Campo m-radio!" src="../img/m-radio.png" title="m-radio" /></p>
 <div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">m-radio</span> <span class="na">label</span><span class="o">=</span><span class="s">&quot; Marque este campo&quot;</span> <span class="na">option</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&quot;filtros.texto&quot;</span> <span class="na">:required</span><span class="o">=</span><span class="s">&quot;true&quot;</span> <span class="p">/&gt;</span>
 </code></pre></div>
-<hr />
 <h2 id="m-date"><code>m-date</code><a class="headerlink" href="#m-date" title="Permanent link">&para;</a></h2>
+<hr />
 <p>Este componente renderiza um campo <code>input</code> do tipo <code>date</code>, com os seguintes atributos:</p>
 <table>
 <thead>
@@ -716,15 +717,15 @@
 <p><img alt="Campo m-date!" src="../img/m-date.png" title="m-date" /></p>
 <div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">m-date</span> <span class="na">min</span><span class="o">=</span><span class="s">&quot;01/01/2000&quot;</span> <span class="na">max</span><span class="o">=</span><span class="s">&quot;31/12/2100&quot;</span> <span class="na">label</span><span class="o">=</span><span class="s">&quot;Selecione uma data&quot;</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&quot;filtros.data&quot;</span> <span class="na">:required</span><span class="o">=</span><span class="s">&quot;true&quot;</span> <span class="p">/&gt;</span>
 </code></pre></div>
-<hr />
 <h2 id="m-date-interval"><code>m-date-interval</code><a class="headerlink" href="#m-date-interval" title="Permanent link">&para;</a></h2>
+<hr />
 <p>Exibe um painel para informar um intervalo de datas, os atributos são iguais aos do m-date.</p>
 <p>Exemplo:</p>
 <p><img alt="Campo m-date-interval!" src="../img/m-date-interval.png" title="m-date-interval" /></p>
 <div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">m-date-interval</span> <span class="na">min</span><span class="o">=</span><span class="s">&quot;01/01/2000&quot;</span> <span class="na">max</span><span class="o">=</span><span class="s">&quot;31/12/2100&quot;</span> <span class="na">label</span><span class="o">=</span><span class="s">&quot;Selecione duas data&quot;</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&quot;filtros.data&quot;</span> <span class="na">:required</span><span class="o">=</span><span class="s">&quot;true&quot;</span> <span class="p">/&gt;</span>
 </code></pre></div>
-<hr />
 <h2 id="m-selec"><code>m-selec</code><a class="headerlink" href="#m-selec" title="Permanent link">&para;</a></h2>
+<hr />
 <p>Exibe um componente que pode ser renderizado como um ComboBox ou como um AutoComplete.</p>
 <table>
 <thead>
@@ -786,6 +787,7 @@
 </div>
 <p>Existem duas maneiras de se preencher um ComboBox, através de dados fixos ou através de registros vindo do banco de dados, veja como realizar estas duas opções:</p>
 <h3 id="atributo-options">Atributo options<a class="headerlink" href="#atributo-options" title="Permanent link">&para;</a></h3>
+<hr />
 <p>Este atributo permite iniciar o componente <code>m-select</code> com algumas opções default, estas opções podem ser definidas através do atributo <code>options</code>.</p>
 <p>O Objeto do Array pode ter 3 propriedades:</p>
 <ul>
@@ -817,8 +819,8 @@
 </div>
 </div>
 </div>
-<hr />
 <h3 id="atributo-request">Atributo request<a class="headerlink" href="#atributo-request" title="Permanent link">&para;</a></h3>
+<hr />
 <p>Esse atributo define como os dados para o ComboBox serão obtidos no Servidor.</p>
 <p>O Objeto do Array pode ter 4 propriedades:</p>
 <ul>
@@ -869,8 +871,8 @@
 </div>
 </div>
 </div>
-<hr />
 <h2 id="m-panel-check-mpms"><code>m-panel-check-mpms</code><a class="headerlink" href="#m-panel-check-mpms" title="Permanent link">&para;</a></h2>
+<hr />
 <p>Este componente exibe um painel com 4 Checkbox que são utilizados para filtrar os registros de um <code>m-select</code> por <strong>Material, Produto, Mercadoria</strong> ou <strong>Serviço</strong>.</p>
 <div class="admonition nota">
 <p class="admonition-title">Nota</p>
@@ -942,8 +944,8 @@
 </div>
 </div>
 </div>
-<hr />
 <h2 id="m-panel-criterio"><code>m-panel-criterio</code><a class="headerlink" href="#m-panel-criterio" title="Permanent link">&para;</a></h2>
+<hr />
 <p>Este componente exibe um painel que permite a utilização dos critérios de seleção nos filtros.</p>
 <div class="admonition nota">
 <p class="admonition-title">Nota</p>
@@ -971,12 +973,10 @@
 <p><img alt="Campo m-panel-criterio!" src="../img/m-panel-criterio.png" title="m-panel-criterio" /></p>
 <div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">m-panel-criterio</span> <span class="na">tipo</span><span class="o">=</span><span class="s">&quot;entidade&quot;</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&#39;filtros.criterios&#39;</span> <span class="p">/&gt;</span>
 </code></pre></div>
-<hr />
 <div class="admonition info">
 <p class="admonition-title">Para saber mais</p>
 <p>Além dos atributos apresentados aqui, todos os componentes podem utilizar os atributos padrões do HTML5.</p>
 </div>
-<hr />
                 
               
               
