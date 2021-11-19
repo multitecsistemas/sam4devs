@@ -6,6 +6,8 @@ Estes componentes são baseados na sintaxe das tags HTML, são construidos a par
 
 ## Atributos Default
 
+----
+
 Assim como nas tags do HTML os componentes Multitec também possuem seus atributos. Todos os componentes por default possuem os seguintes atributos para a sua configuração.
 
 | Nome         | Descrição                                          | Valores Permitidos | Valor Default |
@@ -18,9 +20,9 @@ Assim como nas tags do HTML os componentes Multitec também possuem seus atribut
 | required     | Indica se esse campo é requerido                   | true, false        | false         |
 | v-model      | Nome do componente, utilizado para obter seu valor | *                  | -             |
 
-----
-
 ## `m-input`
+
+----
 
 Este componente renderiza um campo `input` para textos, com os seguintes atributos:
 
@@ -36,9 +38,9 @@ Exemplo:
 <m-input type="text" label="Campo de texto" help="Campo obrigatório" v-model="filtros.texto" :required="true" />
 ```
 
-----
-
 ## `m-check`
+
+----
 
 Este componente renderiza um campo `checkbox`, com os seguintes atributos:
 
@@ -56,9 +58,9 @@ Exemplo:
 <m-check label="Marque este campo" v-model="filtros.texto" :required="true" />
 ```
 
-----
-
 ## `m-radio`
+
+----
 
 Este componente renderiza um campo `radio`, com os seguintes atributos:
 
@@ -75,9 +77,9 @@ Exemplo:
 <m-radio label=" Marque este campo" option="0" v-model="filtros.texto" :required="true" />
 ```	
 
-----
-
 ## `m-date`
+
+----
 
 Este componente renderiza um campo `input` do tipo `date`, com os seguintes atributos:
 
@@ -95,9 +97,9 @@ Exemplo:
 <m-date min="01/01/2000" max="31/12/2100" label="Selecione uma data" v-model="filtros.data" :required="true" />
 ```
 
-----
-
 ## `m-date-interval`
+
+----
 
 Exibe um painel para informar um intervalo de datas, os atributos são iguais aos do m-date.
 
@@ -108,10 +110,10 @@ Exemplo:
 ``` html
 <m-date-interval min="01/01/2000" max="31/12/2100" label="Selecione duas data" v-model="filtros.data" :required="true" />
 ```
-	
-----
 
 ## `m-selec`
+
+----
 
 Exibe um componente que pode ser renderizado como um ComboBox ou como um AutoComplete.
 
@@ -132,6 +134,8 @@ Exibe um componente que pode ser renderizado como um ComboBox ou como um AutoCom
 Existem duas maneiras de se preencher um ComboBox, através de dados fixos ou através de registros vindo do banco de dados, veja como realizar estas duas opções:
 
 ### Atributo options
+
+----
 
 Este atributo permite iniciar o componente `m-select` com algumas opções default, estas opções podem ser definidas através do atributo `options`.
 
@@ -167,9 +171,9 @@ Exemplo:
 	}
 	```
 
-----
-
 ### Atributo request
+
+----
 
 Esse atributo define como os dados para o ComboBox serão obtidos no Servidor.
 
@@ -218,9 +222,9 @@ Exemplo:
 	}
 	```
 	
-----
-
 ## `m-panel-check-mpms`
+
+----
 
 Este componente exibe um painel com 4 Checkbox que são utilizados para filtrar os registros de um `m-select` por **Material, Produto, Mercadoria** ou **Serviço**.
 
@@ -259,9 +263,9 @@ Exemplo:
 	}
 	```
 
-----
-
 ## `m-panel-criterio`
+
+----
 
 Este componente exibe um painel que permite a utilização dos critérios de seleção nos filtros.
 
@@ -280,9 +284,5 @@ Exemplo:
 <m-panel-criterio tipo="entidade" v-model='filtros.criterios' />
 ```
 
-----
-
 !!! info "Para saber mais"
 	Além dos atributos apresentados aqui, todos os componentes podem utilizar os atributos padrões do HTML5.
-
-----
